@@ -165,20 +165,19 @@
 * ## Details:
 
   ## For LJSpeech: 
-
-  - ## \~13k samples, 1 single speaker. 
+  - \~13k samples, 1 single speaker. 
 
   ## For Vox celeb: 
 
-  - ## \~5k samples, 40 English speakers.
+  - \~5k samples, 40 English speakers.
 
   ## For VCTK Corpus: 
 
-  - ## 44 hours of speech, 109 English speakers.
+  - 44 hours of speech, 109 English speakers.
 
-  - ## Sampling rate converted from 48 kHz → 22.05 kHz.
+  - Sampling rate converted from 48 kHz → 22.05 kHz.
 
-  - ## Each utterance normalized and truncated to ≤ 4 s..
+  - Each utterance normalized and truncated to ≤ 4 s..
 
 ---
 
@@ -192,15 +191,15 @@ Text : Printing, in the only sense with which we are at present concerned
 
 - Expected mel:
 
-![Expected mel][images/target_mel.png]
+![Expected mel](images/target_mel.png)
 
 - Predicted mel:
 
-![mel predicted][images/mel_64.png]
+![mel predicted](images/mel_64.png)
 
 - Predicted Frames:
 
-![output frames][images/output_frames.png]
+![output frames](images/output_frames.png)
 
 - Speaker embeddings \- 
 
@@ -208,14 +207,14 @@ Text : Printing, in the only sense with which we are at present concerned
 
 \- t-SNE plots show distinct clustering per speaker identity.
 
-![speaker identites][images/embeddings.jpg]
+![speaker identites](images/embeddings.jpg)
 
 **Losses and Accuracy:**
 
 - **Mel-Spectrogram Prediction:** Uses Mean Squared Error (MSE) Loss to measure the difference between predicted and target mel-spectrograms, ensuring accurate reconstruction of acoustic features.
 
 - **Stop Token Prediction:** Uses Binary Cross-Entropy (BCE) Loss to determine when the model should stop generating frames, preventing unnecessary or incomplete audio outputs.  
-  **![][image7]**
+![loss graph plot](images/loss.png)
 
 ---
 
