@@ -1,0 +1,32 @@
+datasets/LJSpeech-1.1/wavs/LJ001-0001.wav|ljspeech|Printing, in the only sense that it can be called so...
+datasets/LJSpeech-1.1/wavs/LJ001-0002.wav|ljspeech|The existence of a printed book...
+datasets/VCTK-Corpus/wav48/p225/p225_001.wav|p225|Please call Stella.
+datasets/VCTK-Corpus/wav48/p231/p231_005.wav|p231|I like to play guitar.
+datasets/VoxCeleb/wav/id10001/00001.wav|voxceleb|This is an example sentence.
+datasets/VoxCeleb/wav/id10002/00012.wav|voxceleb|How are you today?
+
+--------------------------------------------------------------
+helper script to build datasets
+
+import os
+
+output = open("dataset.txt", "w", encoding="utf-8")
+
+root_paths = {
+    "ljspeech": "datasets/LJSpeech-1.1/wavs",
+    "vctk": "datasets/VCTK-Corpus/wav48",
+    "voxceleb": "datasets/VoxCeleb/wav"
+}
+
+for speaker, base in root_paths.items():
+    for root, _, files in os.walk(base):
+        for f in files:
+            if f.endswith(".wav"):
+                text = "dummy text placeholder" 
+                path = os.path.join(root, f)
+                output.write(f"{path}|{speaker}|{text}\n")
+
+output.close()
+print("dataset.txt built successfully.")
+
+--------------------------------------------------------------

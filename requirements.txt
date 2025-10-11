@@ -1,0 +1,26 @@
+# Core dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy
+scipy
+librosa
+matplotlib
+unidecode
+inflect
+pandas
+tqdm
+numba
+
+# Speaker embedding and audio processing
+import os
+from pathlib import Path
+import re
+import json
+import numpy as np
+import pandas as pd
+import librosa
+from tqdm import tqdm
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
