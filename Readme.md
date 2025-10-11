@@ -198,8 +198,6 @@ Text : Printing, in the only sense with which we are at present concerned
 
 ![mel predicted][images/mel_64.png]
 
-![][image4]
-
 - Predicted Frames:
 
 ![output frames][images/output_frames.png]
