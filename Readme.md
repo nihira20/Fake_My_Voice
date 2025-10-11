@@ -61,7 +61,7 @@
 | **Models Used** | GE2E Speaker Encoder, Tacotron2, WaveGlow |
 | **Visualization** | TensorBoard |
 
-## ---
+---
 
 ## **Architecture**
 
@@ -74,8 +74,9 @@
 - Learns to extract a fixed-dimensional embedding (256-D) that captures the unique vocal identity of a speaker.  
 - Trained using the Generalized End-to-End (GE2E) loss, which encourages embeddings from the same speaker to cluster closely while separating different speakers in the embedding space.  
 - Input: A few seconds of raw audio from the target speaker.  
-- Output: A speaker embedding vector that serves as a conditioning input for the speech synthesizer.  
-  ---
+- Output: A speaker embedding vector that serves as a conditioning input for the speech synthesizer. 
+
+---
 
   ###  2**. Speech Synthesizer (Tacotron2)**
 
@@ -100,14 +101,16 @@
 - Uses both the attended context (from attention mechanism) and previous outputs to predict the next mel frame.  
 - The model is trained with L1 loss.  
 - Output: A high-resolution mel-spectrogram representing the audio features corresponding to the given text and speaker.  
-  ---
+
+---
 
   ###  3\. **Vocoder (WaveGlow)**
 
 - Converts the mel-spectrogram into a time-domain waveform (audible audio).  
 - Input: Mel-spectrogram from Tacotron2.  
-- Output: Final waveform audio in the cloned speaker’s voice.  
-  ---
+- Output: Final waveform audio in the cloned speaker’s voice. 
+
+---
 
   ###  **End-to-End Process**
 
@@ -126,7 +129,7 @@
 
    - Speech audio that mimics the target speaker’s tone, pitch, and speaking style, producing a highly realistic cloned voice.
 
-## ---
+---
 
 ##  **Workflow**
 
@@ -152,7 +155,7 @@
 
    - Provide text and reference audio → get cloned speech output.
 
-## ---
+---
 
 ## **Dataset**
 
