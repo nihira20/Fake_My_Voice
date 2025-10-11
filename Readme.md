@@ -41,13 +41,13 @@
 
 ##  **System Overview**
 
-1. ## Extract speaker embedding from reference audio.
+1. Extract speaker embedding from reference audio.
 
-2. ## Use embedding \+ text to generate mel-spectrogram.
+2. Use embedding \+ text to generate mel-spectrogram.
 
-3. ## Feed mel-spectrogram into vocoder for waveform generation.
+3. Feed mel-spectrogram into vocoder for waveform generation.
 
-4. ## Output is speech mimicking the original speaker.
+4. Output is speech mimicking the original speaker.
 
 ---
 
@@ -65,7 +65,7 @@
 
 ## **Architecture**
 
-![architecture][images/architecture.png]
+![architecture](images/architecture.png)
 
 ## Flow explained: 
 
@@ -132,25 +132,25 @@
 
 1. ## Data Preparation:
 
-   - ## Load and preprocess audio samples (trim, normalize, resample to 22.05 kHz).
+   - Load and preprocess audio samples (trim, normalize, resample to 22.05 kHz).
 
-   - ## Generate mel-spectrograms.
+   - Generate mel-spectrograms.
 
 2. ## Speaker Encoder Training:
 
-   - ## Use GE2E loss to train on multi-speaker dataset (VCTK).
+   - Use GE2E loss to train on multi-speaker dataset (VCTK).
 
 3. ## Speech Synthesis (Tacotron2):
 
-   - ## Train on text \+ mel pairs conditioned with embeddings.
+   - Train on text \+ mel pairs conditioned with embeddings.
 
 4. ## Vocoder (WaveGlow):
 
-   - ## Generate waveform from mel-spectrogram.
+   - Generate waveform from mel-spectrogram.
 
 5. ## Inference:
 
-   - ## Provide text and reference audio → get cloned speech output.
+   - Provide text and reference audio → get cloned speech output.
 
 ## ---
 
