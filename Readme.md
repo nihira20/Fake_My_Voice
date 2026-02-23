@@ -60,7 +60,7 @@ By combining **Speaker Embeddings**, **Sequence-to-Sequence Synthesis**, and **N
 
 ## 🏗️ **Architecture**
 
-![architecture](images/architecture.png)
+![architecture](images/architecture02.png)
 
 ### 1. **Speaker Encoder (GE2E)** 🧠
 - Extracts a fixed-dimensional embedding (**256-D**) capturing vocal identity.
