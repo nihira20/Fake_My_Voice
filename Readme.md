@@ -109,10 +109,7 @@ Achieved stable separation across 40+ speakers. t-SNE plots show distinct identi
 ![speaker identites](images/embeddings.jpg)
 
 ### **Audio Output**
-<audio controls>
-  <source src="images/model_output_fmv.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
+[Download/Listen to Audio Sample](images/model_output_fmv.wav)
 
 > *"Use this model to clone the voice of any user"*
 
