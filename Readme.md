@@ -111,7 +111,7 @@ Achieved stable separation across 40+ speakers. t-SNE plots show distinct identi
 ### **Audio Output**
 [Download/Listen to Audio Sample](images/model_output_fmv.wav)
 
-> *"Use this model to clone the voice of any user"*
+> *The audio says : "Use this model to clone the voice of any user"*
 
 ### **Losses & Metrics**
 - **Mel Prediction:** Mean Squared Error (MSE) Loss.
