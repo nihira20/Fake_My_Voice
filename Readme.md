@@ -108,6 +108,13 @@ Achieved smooth Mel-spectrogram prediction after ~60 epochs.
 Achieved stable separation across 40+ speakers. t-SNE plots show distinct identity clustering.
 ![speaker identites](images/embeddings.jpg)
 
+### **Audio Output**
+<audio controls>
+  <source src="images/model_output_fmv.wav" type="audio/wav">
+</audio>
+
+> *"Use this model to clone the voice of any user"*
+
 ### **Losses & Metrics**
 - **Mel Prediction:** Mean Squared Error (MSE) Loss.
 - **Stop Token:** Binary Cross-Entropy (BCE) Loss.
